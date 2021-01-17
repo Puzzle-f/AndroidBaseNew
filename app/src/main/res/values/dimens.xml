@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin">7dp</dimen>
+    <dimen name="margin">1dp</dimen>
     <dimen name="width">90dp</dimen>
-    <dimen name="width_face">180</dimen>
+    <dimen name="width_face">180dp</dimen>
     <dimen name="text_size">28sp</dimen>
+    <dimen name="margin_button">160dp</dimen>
+    <dimen name="margin_start">2dp</dimen>
+    <dimen name="edittext_width">366dp</dimen>
+    <dimen name="edittext_height">101dp</dimen>
+    <dimen name="vertical_bias">0.098</dimen>
 </resources>
