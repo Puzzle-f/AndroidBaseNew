@@ -1,11 +1,11 @@
 package com.example.alculator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -42,6 +42,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.d("key", "onClick " + button.getText());
     }
 
+    //    слушатель для настроек
+    public View.OnClickListener settingsListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+            startActivity(intent);
+            Log.d("key", "Setting_button");
+        }
+    };
+
     //    слушатель для действий
     public View.OnClickListener buttonActionListener = new View.OnClickListener() {
         @Override
@@ -53,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Log.d("key", "Action " + calculation.operator);
         }
     };
-
 
     public View.OnClickListener buttonResultListener = new View.OnClickListener() {
         @Override
@@ -68,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonClear.setOnClickListener(v -> {
             screen.setText(null);
             topScreen.setText(null);
+            calculation.firstNumber = 0;
+            calculation.firstNumber = 0;
             Log.d("key", "initButtonClear");
         });
     }
@@ -86,6 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initButton() {
+        Button setting = findViewById(R.id.settings);
         Button button1 = findViewById(R.id.button1);
         Button button2 = findViewById(R.id.button2);
         Button button3 = findViewById(R.id.button3);
@@ -118,10 +130,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonMinus.setOnClickListener(buttonActionListener);
         buttonMulti.setOnClickListener(buttonActionListener);
         buttonDivision.setOnClickListener(buttonActionListener);
+        setting.setOnClickListener(settingsListener);
         Log.d("key", "initButton");
     }
-
-
 }
 
 

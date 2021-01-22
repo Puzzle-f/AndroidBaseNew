@@ -17,12 +17,12 @@
     <string name="text_button_0">0</string>
     <string name="text_button_5">5</string>
     <string name="text_button_9">9</string>
-    <string name="text_theme_button">Theme</string>
-    <string name="app_name" >calculator</string>
-    <string name="text_button_theme_yellow">Theme yellow</string>
-    <string name="text_button_theme_black">Theme black</string>
-    <string name="text_button_theme_metal">Theme metal</string>
-    <string name="text_button_en">English language</string>
-    <string name="text_button_rus">Russian language</string>
-    <string name="messages_header">setting</string>
+    <string name="text_theme_button">Тема</string>
+    <string name="app_name" translatable="false">calculator</string>
+    <string name="text_button_theme_yellow">Тема желтая</string>
+    <string name="text_button_theme_black">Тема чёрная</string>
+    <string name="text_button_theme_metal">Тема металл</string>
+    <string name="text_button_en">Английский язык</string>
+    <string name="text_button_rus">Русский язык</string>
+    <string name="messages_header">нн</string>
 </resources>

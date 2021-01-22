@@ -12,4 +12,5 @@
     <dimen name="inset_top">1dp</dimen>
     <dimen name="width_face_0">182dp</dimen>
     <dimen name="text_screen_size">50sp</dimen>
+    <dimen name="text_size_theme_button">10sp</dimen>
 </resources>

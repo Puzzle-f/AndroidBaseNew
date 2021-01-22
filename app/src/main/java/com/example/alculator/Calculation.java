@@ -13,10 +13,8 @@ public class Calculation implements Parcelable {
         this.lastNumber = lastNumber;
     }
 
-
     public Integer sum() {
         return firstNumber = firstNumber + lastNumber;
-
     }
 
     public Integer minus() {
@@ -97,5 +95,4 @@ public class Calculation implements Parcelable {
         }
         operator = in.readString();
     }
-
 }
